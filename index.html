@@ -1,37 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Order summary card</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+		<link rel="stylesheet" href="./CSS/style.css" />
 
-  Order Summary
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+		<title>Frontend Mentor | Order summary card</title>
+	</head>
+	<body>
+		<main>
+			<img
+				src="./images/illustration-hero.svg"
+				alt="Banner - Girl playing music"
+				class="hero-image" />
 
-  Annual Plan
-  $59.99/year
+			<section class="card-content">
+				<h1>Order Summary</h1>
 
-  Change
+				<p>
+					You can now listen to millions of songs, audiobooks, and podcasts on
+					any device anywhere you like!
+				</p>
 
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+				<section class="plan">
+					<div class="plan-content">
+						<img src="./images/icon-music.svg" alt="Music Icon" />
+						<div>
+							<p class="anual-plan">Annual Plan</p>
+							<p>$59.99/year</p>
+						</div>
+					</div>
+					<a href="">Change</a>
+				</section>
+				<div class="button-container">
+					<button class="primary">Proceed to Payment</button>
+					<button class="secondary">Cancel Order</button>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>

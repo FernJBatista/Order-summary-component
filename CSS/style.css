@@ -1,0 +1,272 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: Red Hat Display, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Purple: #766cf1;
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  max-width: 28rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem hsla(245, 75%, 52%, 0.25);
+  box-sizing: border-box;
+  background-color: white;
+}
+main img.hero-image {
+  min-width: 100%;
+}
+main .card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 2rem 3rem 2rem 3rem;
+  box-sizing: border-box;
+}
+main .card-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+main .card-content p {
+  font-size: 1rem;
+  color: var(--Desaturated-blue);
+  line-height: 1.5;
+  text-align: center;
+}
+main .card-content .plan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--Very-pale-blue);
+  width: 100%;
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+main .card-content .plan .plan-content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+main .card-content .plan .plan-content img {
+  aspect-ratio: 1/1;
+}
+main .card-content .plan .plan-content div {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+main .card-content .plan .plan-content div .anual-plan {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Dark-blue);
+}
+main .card-content .plan .plan-content div p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--Desaturated-blue);
+}
+main .card-content .plan a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Bright-blue);
+}
+main .card-content .plan a:hover {
+  color: var(--Purple);
+  text-decoration: none;
+}
+main .card-content div.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .card-content div.button-container button.primary {
+  background-color: var(--Bright-blue);
+  color: white;
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 1rem 1.5rem hsla(245, 75%, 52%, 0.25);
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .card-content div.button-container button.primary:hover {
+  background-color: var(--Purple);
+}
+main .card-content div.button-container button.secondary {
+  background-color: transparent;
+  color: var(--Desaturated-blue);
+  border: 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+main .card-content div.button-container button.secondary:hover {
+  color: var(--Dark-blue);
+}/*# sourceMappingURL=style.css.map */
